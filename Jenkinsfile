@@ -9,7 +9,8 @@ pipeline {
         stage ("Cloning") {
             steps {
                 cleanWs()
-                git credentialsId: 'lokesh', url: 'https://github.com/kiran064/Myproject.git'
+                /*git credentialsId: 'lokesh', url: 'https://github.com/kiran064/Myproject.git'*/
+		git 'https://github.com/kiran064/Myproject.git'
             }
         }
         stage ("Build") {
